@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Data</title>
+</head>
+<body>
+    <h1>Processed Data</h1>
+
+    {% if processed_data %}
+        <ul>
+            {% for item in processed_data %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No processed data available.</p>
+    {% endif %}
+</body>
+</html>
